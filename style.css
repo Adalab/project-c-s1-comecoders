@@ -1,0 +1,64 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+}
+
+.card {
+  padding: 15px 25px 25px 25px;
+}
+
+.data {
+  padding: 15px 25px 25px 25px;
+  background-image: url("background.svg");
+  background-repeat: repeat;
+
+}
+
+.description {
+  color: #1A1A1A;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.name {
+  color: #1A1A1A;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+nav {
+  padding: 40px 25px 15px 25px;
+}
+
+nav a {
+  color: #1A1A1A;
+  font-weight: 500;
+}
+
+.photography img {
+  width: 80%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 120px;
+}
+
+.social img {
+  height: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+ul li:before {
+  content: '\2014';
+  margin-left: -15px;
+  position: absolute;
+}
