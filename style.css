@@ -4,14 +4,17 @@ body {
 }
 
 .card {
-  padding: 15px 25px 25px 25px;
+  padding: 15px 25px 0px 25px;
+  background-image: url("b.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-origin: border-box;
+
 }
 
 .data {
-  padding: 15px 25px 25px 25px;
-  background-image: url("background.svg");
-  background-repeat: repeat;
-
+  padding: 5px 25px 25px 25px;
 }
 
 .description {
@@ -19,6 +22,11 @@ body {
   font-size: 14px;
   font-weight: 300;
   margin-top: 0;
+}
+
+main {
+  background-image: url("background.svg");
+  background-repeat: repeat;
 }
 
 .name {
