@@ -1,20 +1,8 @@
+/* NOTE: GENERAL */
+
 body {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
-}
-
-.card {
-  padding: 15px 25px 0px 25px;
-  background-image: url("b.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: 100% 80%;
-  background-origin: border-box;
-
-}
-
-.data {
-  padding: 5px 25px 25px 25px;
 }
 
 .description {
@@ -24,17 +12,14 @@ body {
   margin-top: 0;
 }
 
-main {
-  background-image: url("background.svg");
-  background-repeat: repeat;
-}
-
 .name {
   color: #1A1A1A;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
 }
+
+/* NOTE: NAV */
 
 nav {
   padding: 40px 25px 15px 25px;
@@ -43,6 +28,26 @@ nav {
 nav a {
   color: #1A1A1A;
   font-weight: 500;
+}
+
+/* NOTE: MAIN */
+
+.card {
+  background-image: linear-gradient(to bottom, white, white);
+  background-origin: border-box;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  padding: 15px 25px 0 25px;
+}
+
+.data {
+  padding: 5px 25px 25px 25px;
+}
+
+main {
+  background-image: url("../img/background.svg");
+  background-repeat: repeat;
 }
 
 .photography img {
