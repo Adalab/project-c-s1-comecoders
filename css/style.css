@@ -1,25 +1,41 @@
-/* NOTE: GENERAL */
+/*  GENERAL */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  color: #1A1A1A;
   font-family: 'Roboto Mono', monospace;
   margin: 0;
 }
 
 .description {
-  color: #1A1A1A;
   font-size: 14px;
   font-weight: 300;
   margin-top: 0;
 }
 
 .name {
-  color: #1A1A1A;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
+  /*se esta aplicando un margin de 14 en top y bottom, a mi enteder por la hoja de estilos del navegador. ¿Deberia especificar los valores aunque ya se apliquen?*/
 }
 
-/* NOTE: NAV */
+/* HEADER */
+
+.header-b {
+  background: #1A1A1A;
+}
+
+.logo-b {
+  filter: invert();
+  padding: 10px;
+  width: 50%;
+}
+
+/* NAV */
 
 nav {
   padding: 40px 25px 15px 25px;
@@ -30,7 +46,7 @@ nav a {
   font-weight: 500;
 }
 
-/* NOTE: MAIN */
+/* MAIN */
 
 .card {
   background-image: linear-gradient(to bottom, white, white);
@@ -65,13 +81,42 @@ main {
   height: 30px;
 }
 
-ul {
+.description ul {
   list-style-type: none;
   padding-left: 15px;
 }
 
-ul li:before {
+.description ul li:before {
   content: '\2014';
   margin-left: -15px;
   position: absolute;
+}
+
+/* FOOTER */
+
+.footer{
+  background: #1A1A1A;
+  position:relative;
+  height: 200px;
+  padding: 30px;
+}
+
+.logo{
+  height: 15px;
+}
+
+.agradecimientos {
+  color: #F2F2F2;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.registro {
+  color: #F2F2F2;
+  font-size: 12px;
+  padding-top: 70px;
+}
+
+.centrado{
+  text-align:center;
 }
