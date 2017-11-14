@@ -1,0 +1,119 @@
+/*  GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #1A1A1A;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  /*se esta aplicando un margin de 14 en top y bottom, a mi enteder por la hoja de estilos del navegador. ¿Deberia especificar los valores aunque ya se apliquen?*/
+}
+
+/* HEADER */
+
+.header-b {
+  background: #1A1A1A;
+}
+
+.logo-b {
+  filter: invert();
+  padding: 10px;
+  width: 50%;
+}
+
+/* NAV */
+
+nav {
+  padding: 40px 25px 15px 25px;
+}
+
+nav a {
+  color: #1A1A1A;
+  font-weight: 500;
+}
+
+/* MAIN */
+
+.card {
+  background-image: linear-gradient(to bottom, white, white);
+  background-origin: border-box;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  padding: 15px 25px 0 25px;
+}
+
+.data {
+  padding: 5px 25px 25px 25px;
+}
+
+main {
+  background-image: url("../img/background.svg");
+  background-repeat: repeat;
+}
+
+.photography img {
+  width: 80%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 120px;
+}
+
+.social img {
+  height: 30px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.description ul li:before {
+  content: '\2014';
+  margin-left: -15px;
+  position: absolute;
+}
+
+/* FOOTER */
+
+footer{
+  align-items: center;
+  background: #1A1A1A;
+  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 30px;
+  text-align:center;
+}
+
+footer img{
+  padding-bottom: 20px;
+  width: 60%;
+}
+
+.thanks {
+  width: 80%;
+}
+
+.attributions {
+  font-size: 10px;
+}
