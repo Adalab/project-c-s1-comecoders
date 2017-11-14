@@ -1,13 +1,17 @@
 body{
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
+  font-size: 1em;
   color:#1A1A1A;
   margin: 0;
 }
 
 .cabecera{
   text-align: center;
-  padding: 50px;
+  padding: 3.125em;
+}
+
+.logo{
+  width: 100%;
 }
 
 section{
@@ -19,8 +23,8 @@ section{
   margin-bottom: auto;
 }
 .section-title {
-  margin-bottom: 60px;
-  font-size: 40px;
+  margin-bottom: 2em;
+  font-size: 2.500em;
   font-weight: 500;
 
 }
@@ -28,7 +32,7 @@ section{
 
   text-align: center;
   margin-top: auto;
-  margin-bottom: 70px;
+  margin-bottom: 4.375em;
 
 }
 .yolanda {
@@ -39,18 +43,17 @@ section{
 
 }
 section img {
-  width: 110px;
-  height: 110px;
+  width: 6.875em;
   border-radius: 50%;
-  border: 30px solid white;
+  border: 1.875em solid white;
 
 }
 .member-name {
-  margin-bottom: 8px;
+  margin-bottom: 0.500em;
   font-weight: 500;
 }
 .member-rol{
-  margin-top:8px;
+  margin-top:0.500em;
   font-weight: 300;
 }
 
@@ -60,14 +63,14 @@ footer{
   color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  padding: 30px;
+  font-size: 0.750em;
+  padding: 1.875em;
   text-align:center;
 }
 
 footer img{
-  padding-bottom: 20px;
-  width: 80%;
+  padding-bottom: 1.250em;
+  width: 60%;
 }
 
 .thanks {
@@ -75,5 +78,32 @@ footer img{
 }
 
 .attributions {
-  font-size: 10px;
+  font-size: 0.625em;
 }
+
+
+@media all and (min-width:768px){
+ body {
+ font-size: 1.125em;
+ }
+ }
+
+ @media all and (min-width:1024px){
+  body {
+  font-size: 1.5em;
+  }
+.flex{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.name{
+  width: 50%;
+}
+.yolanda{
+  width:50%;
+}
+
+
+  }
