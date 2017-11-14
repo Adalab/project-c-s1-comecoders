@@ -94,29 +94,26 @@ main {
 
 /* FOOTER */
 
-.footer{
+footer{
+  align-items: center;
   background: #1A1A1A;
-  position:relative;
-  height: 200px;
-  padding: 30px;
-}
-
-.logo{
-  height: 15px;
-}
-
-.agradecimientos {
   color: #F2F2F2;
-  font-size: 14px;
-  padding-bottom: 10px;
-}
-
-.registro {
-  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
   font-size: 12px;
-  padding-top: 70px;
+  padding: 30px;
+  text-align:center;
 }
 
-.centrado{
-  text-align:center;
+footer img{
+  padding-bottom: 20px;
+  width: 60%;
+}
+
+.thanks {
+  width: 80%;
+}
+
+.attributions {
+  font-size: 10px;
 }
