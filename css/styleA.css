@@ -1,8 +1,8 @@
 body{
-font-family: 'Roboto Mono', monospace;
-font-size: 16px;
-color:#1A1A1A;
-margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  color:#1A1A1A;
+  margin: 0;
 }
 
 .cabecera{
@@ -14,10 +14,6 @@ section{
 
   background-image: url("../img/background.svg");
   background-repeat: repeat;
-
-}
-
-.team {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
@@ -28,36 +24,21 @@ section{
   font-weight: 500;
 
 }
-.Diana {
+.name {
 
   text-align: center;
   margin-top: auto;
   margin-bottom: 70px;
 
 }
-.Gemma {
-
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 70px;
-
-}
-
-.Rocio {
-
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 70px;
-
-}
-.Yolanda {
+.yolanda {
 
   text-align: center;
   margin-top: auto;
 
 
 }
- section img {
+section img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -73,25 +54,26 @@ section{
   font-weight: 300;
 }
 
-.footer{
-  background: black;
-  height: 175px;
-  padding: 30px;
-  box-sizing: border-box;
-}
-.logo{
-  height: 15px;
-}
-.agradecimientos {
+footer{
+  align-items: center;
+  background: #1A1A1A;
   color: #F2F2F2;
-  font-size: 14px;
-  padding-bottom: 10px;
-}
-.registro {
-  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
   font-size: 12px;
-  padding-top: 70px;
-}
-.centrado{
+  padding: 30px;
   text-align:center;
+}
+
+footer img{
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+.thanks {
+  width: 80%;
+}
+
+.attributions {
+  font-size: 10px;
 }
