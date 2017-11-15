@@ -83,27 +83,51 @@ footer img{
 
 
 @media all and (min-width:768px){
- body {
- font-size: 1.125em;
- }
- }
-
- @media all and (min-width:1024px){
   body {
-  font-size: 1.5em;
+    font-size: 1.125em;
   }
-.flex{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  .cabecera{
+    max-width: 500px;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
 }
-.name{
-  width: 50%;
-}
-.yolanda{
-  width:50%;
-}
-
+@media all and (min-width:920px){
+  body {
+    font-size: 1.125em;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
   }
+  .name{
+    width: 50%;
+  }
+  .yolanda{
+    width:50%;
+  }
+
+}
+
+@media all and (min-width:1024px){
+  body {
+    font-size: 1.125em;
+  }
+  .descripcion-equipo{
+    min-width: 800px;
+  }
+  .cabecera{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
