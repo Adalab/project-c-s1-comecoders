@@ -1,0 +1,133 @@
+body{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  color:#1A1A1A;
+  margin: 0;
+}
+
+.cabecera{
+  text-align: center;
+  padding: 3.125em;
+}
+
+.logo{
+  width: 100%;
+}
+
+section{
+
+  background-image: url("../img/background.svg");
+  background-repeat: repeat;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.section-title {
+  margin-bottom: 2em;
+  font-size: 2.500em;
+  font-weight: 500;
+
+}
+.name {
+
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 4.375em;
+
+}
+.yolanda {
+
+  text-align: center;
+  margin-top: auto;
+
+
+}
+section img {
+  width: 6.875em;
+  border-radius: 50%;
+  border: 1.875em solid white;
+
+}
+.member-name {
+  margin-bottom: 0.500em;
+  font-weight: 500;
+}
+.member-rol{
+  margin-top:0.500em;
+  font-weight: 300;
+}
+
+footer{
+  align-items: center;
+  background: #1A1A1A;
+  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.750em;
+  padding: 1.875em;
+  text-align:center;
+}
+
+footer img{
+  padding-bottom: 1.250em;
+  width: 60%;
+}
+
+.thanks {
+  width: 80%;
+}
+
+.attributions {
+  font-size: 0.625em;
+}
+
+
+@media all and (min-width:768px){
+  body {
+    font-size: 1.125em;
+  }
+  .cabecera{
+    max-width: 500px;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+@media all and (min-width:920px){
+  body {
+    font-size: 1.125em;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .name{
+    width: 50%;
+  }
+  .yolanda{
+    width:50%;
+  }
+
+}
+
+@media all and (min-width:1024px){
+  body {
+    font-size: 1.125em;
+  }
+  .descripcion-equipo{
+    min-width: 800px;
+  }
+  .cabecera{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
