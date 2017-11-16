@@ -11,16 +11,16 @@ body {
 }
 
 .description {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 300;
   margin-top: 0;
 }
 
 .name {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
-  margin: 0;
-  /*se esta aplicando un margin de 14 en top y bottom, a mi enteder por la hoja de estilos del navegador. ¿Deberia especificar los valores aunque ya se apliquen?*/
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* HEADER */
@@ -31,14 +31,15 @@ body {
 
 .logo-b {
   filter: invert();
-  padding: 10px;
+  padding: 0.625em;
   width: 50%;
+  max-width: 200px;
 }
 
 /* NAV */
 
 nav {
-  padding: 40px 25px 15px 25px;
+  padding: 2.5em 1.5em 1em 1.5em;
 }
 
 nav a {
@@ -54,11 +55,11 @@ nav a {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 100% 80%;
-  padding: 15px 25px 0 25px;
+  padding: 1em 1.5em 0 1.5em;
 }
 
 .data {
-  padding: 5px 25px 25px 25px;
+  padding: 0.25em 1.5em 1.5em 1.5em;
 }
 
 main {
@@ -68,27 +69,31 @@ main {
 
 .photography img {
   width: 80%;
+  max-width: 300px;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  width: 120px;
+  margin-top: 0.75em;
+  width: 50%;
+  max-width: 200px;
 }
 
 .social img {
-  height: 30px;
+  width: 100%;
+  max-width: 60px;
+  padding: 0 0.5em 0 0.5em;
 }
 
 .description ul {
   list-style-type: none;
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
 .description ul li:before {
   content: '\2014';
-  margin-left: -15px;
+  margin-left: -1em;
   position: absolute;
 }
 
@@ -100,13 +105,13 @@ footer{
   color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  padding: 30px;
+  font-size: 0.75em;
+  padding: 2em;
   text-align:center;
 }
 
 footer img{
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
   width: 60%;
 }
 
@@ -115,5 +120,25 @@ footer img{
 }
 
 .attributions {
-  font-size: 10px;
+  font-size: 0.625em;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width:768px){
+  body {
+  font-size: 1.125em;
+  }
+}
+
+@media all and (min-width:920px){
+  body {
+  font-size: 1.125em;
+  }
+}
+
+@media all and (min-width:1024px){
+  body {
+  font-size: 1.125em;
+  }
 }
