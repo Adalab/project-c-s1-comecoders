@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   font-family: 'Roboto Mono', monospace;
   font-size: 1em;
@@ -32,16 +35,10 @@ section{
 
   text-align: center;
   margin-top: auto;
-  margin-bottom: 4.375em;
+  padding-bottom: 4.375em;
 
 }
-.yolanda {
 
-  text-align: center;
-  margin-top: auto;
-
-
-}
 section img {
   width: 6.875em;
   border-radius: 50%;
@@ -71,10 +68,6 @@ footer{
 footer img{
   padding-bottom: 1.250em;
   width: 60%;
-}
-
-.thanks {
-  width: 80%;
 }
 
 .attributions {
@@ -110,10 +103,23 @@ footer img{
   .name{
     width: 50%;
   }
-  .yolanda{
-    width:50%;
+
+  .footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .thanks{
+    font-size: 1em;
   }
 
+  .attributions{
+    font-size: 0.8em;
+    padding-left: 10em;
+  }
+  .adalab {
+    padding-top: 1.5em;
+  }
 }
 
 @media all and (min-width:1024px){
