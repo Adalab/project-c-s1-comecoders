@@ -32,8 +32,9 @@ body {
 }
 
 .logo-b {
+  display: block;
   max-width: 200px;
-  padding: 0.625em;
+  padding: 1em;
   width: 50%;
 }
 
