@@ -8,6 +8,8 @@ body {
   color: #1A1A1A;
   font-family: 'Roboto Mono', monospace;
   margin: 0;
+  font-size: 12px;
+  min-height: 100vh;
 }
 
 .description {
@@ -39,7 +41,7 @@ body {
 /* NAV */
 
 nav {
-  padding: 2.5em 1.5em 1em 1.5em;
+  padding: 2.5em 1.5em 1em 2em;
 }
 
 nav a {
@@ -55,21 +57,22 @@ nav a {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 100% 80%;
-  padding: 1em 1.5em 0 1.5em;
+  padding: 1em 2em 0 2em;
 }
 
 .data {
-  padding: 0.25em 1.5em 1.5em 1.5em;
+  padding: 0.25em 2em 4em 2em;
 }
 
 main {
   background-image: url("../img/background.svg");
   background-repeat: repeat;
+  flex-grow: 1;
 }
 
-.photography img {
+.photography {
   width: 80%;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .social {
@@ -82,16 +85,15 @@ main {
 
 .social img {
   width: 100%;
-  max-width: 60px;
   padding: 0 0.5em 0 0.5em;
 }
 
-.description ul {
+.data ul {
   list-style-type: none;
   padding-left: 1em;
 }
 
-.description ul li:before {
+.data ul li:before {
   content: '\2014';
   margin-left: -1em;
   position: absolute;
@@ -127,18 +129,90 @@ footer img{
 
 @media all and (min-width:768px){
   body {
-  font-size: 1.125em;
+  font-size: 12px;
+  }
+
+  .data, .card{
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+
+  nav {
+    padding-left: 9em;
   }
 }
 
+
 @media all and (min-width:920px){
-  body {
-  font-size: 1.125em;
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav .back {
+    padding: 2em;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .member {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .card {
+    width: 40%;
+    padding: 3em 1.5em 15em 5em;
+    display: flex;
+    flex-direction: column;
+    background-size: 100%;
+    align-items: flex-end;
+  }
+
+  .photography {
+    width: 100%;
+  }
+
+  .data {
+    width: 60%;
+    padding: 5.25em 5em 0 1.5em;
+    background-image: linear-gradient(to bottom, white, white);
+    background-origin: border-box;
+    background-position: left top;
   }
 }
 
 @media all and (min-width:1024px){
   body {
-  font-size: 1.125em;
+  font-size: 13px;
+  }
+
+  nav .back {
+    width: 60%;
+  }
+
+  .member {
+    width: 60%;
+  }
+
+  .card {
+    padding-left: 3em;
+  }
+
+  .data {
+    padding-right: 3em;
+
+  }
+
+  .social {
+    max-width: 120px;
   }
 }
