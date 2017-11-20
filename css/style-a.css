@@ -1,6 +1,9 @@
+/* GENERAL */
+
 * {
   box-sizing: border-box;
 }
+
 
 body {
   font-family: 'Roboto Mono', monospace;
@@ -9,14 +12,7 @@ body {
   margin: 0;
 }
 
-.cabecera {
-  text-align: center;
-  padding: 3.125em;
-}
-
-.logo {
-  width: 100%;
-}
+/* MAIN */
 
 section {
   background-image: url("../img/background.svg");
@@ -54,7 +50,20 @@ section img {
   font-weight: 300;
 }
 
-footer {
+/* HEADER */
+
+.cabecera {
+  text-align: center;
+  padding: 3.125em;
+}
+
+.logo {
+  width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
   align-items: center;
   background: #1A1A1A;
   color: #F2F2F2;
@@ -65,7 +74,7 @@ footer {
   text-align:center;
 }
 
-footer img {
+.footer img {
   padding-bottom: 1.250em;
   width: 60%;
 }
@@ -74,7 +83,9 @@ footer img {
   font-size: 0.625em;
 }
 
-@media all and (min-width:768px){
+/* MEDIAQUERIES */
+
+@media all and (min-width:768px) {
   body {
     font-size: 1.125em;
   }
@@ -90,7 +101,7 @@ footer img {
   }
 }
 
-@media all and (min-width:920px){
+@media all and (min-width:920px) {
   body {
     font-size: 1.125em;
   }
@@ -125,7 +136,7 @@ footer img {
   }
 }
 
-@media all and (min-width:1024px){
+@media all and (min-width:1024px) {
   body {
     font-size: 1.125em;
   }
