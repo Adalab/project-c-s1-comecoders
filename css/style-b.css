@@ -101,7 +101,7 @@ main {
 
 /* FOOTER */
 
-footer{
+footer {
   align-items: center;
   background: #1A1A1A;
   color: #F2F2F2;
@@ -112,7 +112,7 @@ footer{
   text-align:center;
 }
 
-footer img{
+footer img {
   padding-bottom: 1.250em;
   width: 60%;
 }
@@ -128,7 +128,7 @@ footer img{
     font-size: 12px;
   }
 
-  .data, .card{
+  .data, .card {
     padding-left: 9em;
     padding-right: 9em;
   }
@@ -137,7 +137,6 @@ footer img{
     padding-left: 9em;
   }
 }
-
 
 @media all and (min-width:920px){
   nav {
