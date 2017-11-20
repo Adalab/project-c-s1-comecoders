@@ -7,7 +7,9 @@
 body {
   color: #1A1A1A;
   font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
   margin: 0;
+  min-height: 100vh;
 }
 
 .description {
@@ -19,8 +21,8 @@ body {
 .name {
   font-size: 1.125em;
   font-weight: 500;
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* HEADER */
@@ -30,16 +32,16 @@ body {
 }
 
 .logo-b {
-  filter: invert();
-  padding: 0.625em;
-  width: 50%;
+  display: block;
   max-width: 200px;
+  padding: 1em;
+  width: 50%;
 }
 
 /* NAV */
 
 nav {
-  padding: 2.5em 1.5em 1em 1.5em;
+  padding: 2.5em 1.5em 1em 2em;
 }
 
 nav a {
@@ -55,43 +57,43 @@ nav a {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 100% 80%;
-  padding: 1em 1.5em 0 1.5em;
+  padding: 1em 2em 0 2em;
 }
 
 .data {
-  padding: 0.25em 1.5em 1.5em 1.5em;
+  padding: 0.25em 2em 4em 2em;
 }
 
 main {
   background-image: url("../img/background.svg");
   background-repeat: repeat;
+  flex-grow: 1;
 }
 
-.photography img {
+.photography {
+  max-width: 500px;
   width: 80%;
-  max-width: 300px;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
   margin-top: 0.75em;
-  width: 50%;
   max-width: 200px;
+  width: 50%;
 }
 
 .social img {
-  width: 100%;
-  max-width: 60px;
   padding: 0 0.5em 0 0.5em;
+  width: 100%;
 }
 
-.description ul {
+.data ul {
   list-style-type: none;
   padding-left: 1em;
 }
 
-.description ul li:before {
+.data ul li:before {
   content: '\2014';
   margin-left: -1em;
   position: absolute;
@@ -99,24 +101,20 @@ main {
 
 /* FOOTER */
 
-footer{
+footer {
   align-items: center;
   background: #1A1A1A;
   color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  font-size: 0.75em;
-  padding: 2em;
+  font-size: 0.750em;
+  padding: 1.875em;
   text-align:center;
 }
 
-footer img{
-  padding-bottom: 1.25em;
+footer img {
+  padding-bottom: 1.250em;
   width: 60%;
-}
-
-.thanks {
-  width: 80%;
 }
 
 .attributions {
@@ -127,18 +125,99 @@ footer img{
 
 @media all and (min-width:768px){
   body {
-  font-size: 1.125em;
+    font-size: 12px;
+  }
+
+  .data, .card {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+
+  nav {
+    padding-left: 9em;
   }
 }
 
 @media all and (min-width:920px){
-  body {
-  font-size: 1.125em;
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav .back {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2em;
+    width: 80%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .member {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .card {
+    align-items: flex-end;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 1.5em 15em 5em;
+    width: 40%;
+  }
+
+  .photography {
+    width: 100%;
+  }
+
+  .data {
+    background-image: linear-gradient(to bottom, white, white);
+    background-origin: border-box;
+    background-position: left top;
+    padding: 5.25em 5em 0 1.5em;
+    width: 60%;
+  }
+
+  .footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .thanks{
+    font-size: 1em;
+  }
+
+  .attributions{
+    font-size: 0.8em;
+    padding-left: 10em;
+  }
+
+  .adalab {
+    padding-top: 1.5em;
   }
 }
 
 @media all and (min-width:1024px){
   body {
-  font-size: 1.125em;
+    font-size: 13px;
+  }
+
+  .member, nav .back {
+    width: 60%;
+  }
+
+  .card, .data{
+    padding-left: 3em;
+  }
+
+  .social {
+    max-width: 120px;
   }
 }
